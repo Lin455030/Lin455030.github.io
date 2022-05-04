@@ -1,0 +1,106 @@
+<html>
+<script language="JavaScript">
+	function Time(){
+	var now=new Date();
+	var y=now.getFullYear();
+	var M=now.getMonth()+1;
+	var d=("0"+now.getDate()).slice(-2);
+	var h=("0"+now.getHours()).slice(-2);
+	var m=("0"+now.getMinutes()).slice(-2);
+	var s=("0"+now.getSeconds()).slice(-2);
+	document.getElementById('showtime').innerHTML =M+"-"+d+"-"+y+" "+h+":"+m+":"+s;
+  setTimeout('Time()',1000);
+	}
+</script>
+<head>
+<link href="img/logo.ico" rel="shortcut icon"/>
+<title>My biography</title>
+<style type="text/css">
+a{
+	color:red;
+}
+#site{
+	background-color:D5F5CE;
+  width:1340px;
+  height:900px;
+  margin:0;
+  font-size:30px;
+	float:left;
+}
+#picture{
+	width:300px;
+	height:900px;
+	text-align:center;
+	float:left;
+}
+#content{
+	margin-left:300px;
+	width:900px;
+	height:900px;
+	text-align:left;
+}
+#timer{
+	width:1200px;
+	text-align:right;
+}
+
+</style>
+</head>
+<body>
+
+
+<div id="site">
+<div id="timer">
+<body onload="Time()"><div id="showtime"></div></body>
+</div>
+<div id="picture">
+Lin-Hung-Chih
+<img src="https://i.imgur.com/KFq5gnY.jpg"
+width="225px"
+height="310px"
+>
+<p><audio src="02.mp3" autoplay controls ></audio></p>
+</div>
+<div id="content">
+<p>
+My name is Lin-Hung-chih. 
+I live in Yonghe, New Taipei City, Taiwan with my parents, my grandfather, and my sister.
+I studied in <a href="https://www2.ck.tp.edu.tw/">Taipei Municipal Jianguo High School</a> for three years and graduated.
+I'm now studying in National Taiwan University and majoring in <a href="https://web.ee.ntu.edu.tw/">Electrical Engineering</a>.
+</p>
+<p>
+In my leisure time, I sometimes watch baseball games at home or in the field with my family. 
+The team that I support in CPBL is Uni-Lions.
+<br>Uni-Lions official website --->
+	<a href="https://www.uni-lions.com.tw/">
+	Visit
+	</a>
+</p>
+<p>
+When I was studying or doing my homework, I usually listened to some music at the same time. 
+My favorite music genres are Rock and Jpop. 
+For the Jpop, my favorite club is TUMENECO. 
+They always make very relaxing and comfortable music. 
+The background music of this website is also made by them.
+<br>TUMENECO official website --->
+	<a href="http://shoyu-sound.jp/tumeneco/">
+	Visit
+	</a>
+</p>
+<p>
+I also enjoy in watching memes in any forms. 
+It is very relaxing while watching some funny stuffs online.
+<br>Looking for some memes? --->
+	<a href="https://www.reddit.com/r/memes/">
+	Visit Reddit:r/memes
+	</a>
+</p>
+<font size="7" face="Times New Roman">
+	<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+	<strong>The truth of the universe</strong>
+	</a>
+</font>
+</div>
+</div>
+</body>
+</html>
